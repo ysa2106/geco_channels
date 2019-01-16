@@ -51,17 +51,19 @@ which they are connected.
 
 ### Updating the Site Maps
 
-1.  When editing this map in Omnigraffle, make sure to add a URL action in the
+1. Clone this repository
+2. Open the .graffle files in Omnigraffle with Finder to edit the maps. Note command line will display these as directories, so it is easier to open them with Finder. 
+3.  When editing this map in Omnigraffle, make sure to add a URL action in the
     "Properties" section of the "Inspect" sidebar. For the URL, write the prefix
     l.dv/ (which will later be expanded to a list of channel name results on
     LIGO-DV-Web) followed by the partial channel name (should look like
     l.dv/<channel-name>)
-2.  Run the `add_ligo_dv_links.sh` script (full text below), which should also
+4.  Run the `add_ligo_dv_links.sh` script (full text below), which should also
     be contained in this repository on this graffle file. For example, if the
     SVG file is called map.svg, you would run `./add_ligo_dv_links.sh map.svg.`
-3.  Re-open this file and confirm that any new links have been expanded
+5.  Re-open this file and confirm that any new links have been expanded
     properly.
-4.  Export to your preferred format. SVG, PDF, and HTML all preserve links;
+6.  Export to your preferred format. SVG, PDF, and HTML all preserve links;
     other image formats do no.
 
 #### Full text of `add_ligo_dv_links.sh`
